@@ -1,30 +1,30 @@
 class ClaudeProfileHub < Formula
   desc "Run separate Claude Desktop profiles side by side, each with its own sign-in"
   homepage "https://github.com/slukedev/claude-profile-hub"
-  version "0.1.0"
+  version "0.2.0"
   license "MIT"
 
-  base = "https://github.com/slukedev/claude-profile-hub/releases/download/v0.1.0/claude-profile-hub"
+  base = "https://github.com/slukedev/claude-profile-hub/releases/download/v0.2.0/claude-profile-hub"
 
   on_macos do
     on_arm do
       url "#{base}-aarch64-apple-darwin.tar.gz"
-      sha256 "c2ad0101fb7e1e40be4cd2696c0151300b9b1ce4d3020b424d11c8b97a2fa33e"
+      sha256 "79a3fc7b0f380a26ac1c115ca97cdfdc6958b0d19dc0981c1f0bc6bcab636d0c"
     end
     on_intel do
       url "#{base}-x86_64-apple-darwin.tar.gz"
-      sha256 "1752efa68456aa8736148dd4fa6b0047b97c5fcebc3dd8096fa1b4fc329715d3"
+      sha256 "bb383e0633a1bf32866a7fb6419fc30904856f68e042e06fc08a5a73eef52648"
     end
   end
 
   on_linux do
     on_arm do
       url "#{base}-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "51558da6878e596c046a9cf1660d2ab45ab779a9834900cbe5e00d75f5f2a9f3"
+      sha256 "4f5997d1b2529ef8c7be469a012920aa2f83996e32f9fe82410a98e5f55df68e"
     end
     on_intel do
       url "#{base}-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "62dca6088efe8c6b5f9d75308baf7fbe20b4dc924178e8d7d3d82266e9553018"
+      sha256 "bdf59430125e8367ddc8e42a869c0e297cfa2012a3355d7bf235387d6eb62caa"
     end
   end
 
